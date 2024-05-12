@@ -63,3 +63,12 @@
 // 2.)Multi Line Comment: Multi-line comments start with "/*" and end with "*/". Used for commenting multiple lines.
 
 // Use of Comment: These comments are not executed by the JavaScript engine and are purely for human readability. They are useful for documenting code, explaining functionality, or temporarily disabling code segments during testing or debugging.
+
+
+// Variable: It is a container, Value Store/Data.
+// Data- Text / Number / Mixed Collection of Text and Number
+
+// let  Variable_name; (declared)
+// Variable_name = data/value;
+
+// const Variable_name = data (declared + Assigned)
