@@ -22,7 +22,7 @@
 //---------->History:<----------//
 
 // 1.)Brendan Eich - 1995 (10 Days)(Mocha).
-// 2.)LiveScript2.)(initial name) -> Javascript.
+// 2.)LiveScript(initial name) -> Javascript.
 
 
 // JavaScript - frontend (React JS)/ backend (Node.js)
@@ -34,7 +34,7 @@
 // V8 - Chorme, Opera, MS Edge
 // SpiderMonkey - Firefox
 
-// What Engine Do:-> Read Script, Complilar convert it into Machine Code.
+// What Engine Do:-> Read Script, Compliler convert it into Machine Code.
 
 
 //---------->ECMAScript:<----------//
