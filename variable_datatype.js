@@ -1,124 +1,118 @@
 // Variable: A variable is a container for storing data values.
 
-//let and const are used to declare a variable. (ES6) - 2015
+// Dynamically type language - JS
 
-//var is also used to declare a variable but it is not recommended.
+//"=" is used to assign value to a variable , assignment operator.
+
+// ("", ''):- used for Text / String
+
+//identifier - name of the variable
+
+//console.log(fullname); // printing the output
 
 
-// // let firstname; //variable declearation
-// // let lastname; //variable declearation
+//---------->JavaScript Variables can be declared in 3 ways:<----------//
 
-// // firstname = "Jhon"; //variable assignment  
-// // firstname = "Mark"; //variable reassignment
- 
-// //  = is used to assign value to a variable , assignment operator
-// // = "" , '' used for Text / String
+// 1.)var: var is used to declare a variable from 1995 to 2015 but it is not recommended.
 
-// // let fullname = "Punam" //variable declearation + assignment
+// a.)They can be re-declared and updated within their scope.
+// b.)var variables are hoisted to the top of their scope during execution, which means they can be accessed before they are declared (their value will be undefined).
+// c.)Variables declared with var are function-scoped or globally-scoped.
 
-// // fullname = "Punam Singh" //variable reassignment
 
-// // let fullname = 9 //variable redeclaration
+//---------->let and const are used to declare a variable. (ES6) - 2015
 
-// // We can not redeclare a variable using let keyword.
+// 2.)let:
 
-// // identifier - name of the variable
+// a.)They can be updated within their scope, but not re-declared in the same scope.
+// b.)let variables are not hoisted to the top of their scope. They are only accessible after their declaration.
+// c.)Variables declared with let are block-scoped, meaning their scope is limited to the block (enclosed by curly braces {}) in which they are declared.
 
-// // console.log(fullname);
+//---------->Example:<----------//
 
-// // const firstNumber = 9; //variable declearation + assignment
-// // firstNumber = 10; //variable reassignment
+// let firstname; //variable declearation
 
-// // const firstNumber = 10; //variable redeclaration
+// firstname = "Jhon"; //variable assignment  
+// firstname = "Mark"; //variable reassignment
 
-// // in const , we can not reassign a variable and we can not redeclare a variable.
+// let fullname = "Punam" //variable declearation + assignment
+// let fullname = 9 //variable redeclaration
+
+//We can not redeclare a variable using let and const keyword.
+
+//--------------------------------------------//
+
+
+// 3.)const:
+
+// a.)They must be initialized during declaration, and once initialized, their value cannot be reassigned.
+// b.)const variables are not hoisted to the top of their scope and are only accessible after their declaration.
+// c.)Variables declared with const are block-scoped.
+
+//---------->Example:<----------//
+
+// const firstNumber = 9; //variable declearation + assignment
+// firstNumber = 10; //variable reassignment
+
+// const firstNumber = 10; //variable redeclaration
+
 
 // // console.log("first", firstNumber);
 
-// // let firstNumber = 10;
+// let firstNumber = 10;
 
-// // Hoisting- JavaScript hoisting is the process of moving all the declarations to the top of the current scope (block scope / functional scope).
+// const firstNumber = 10; //variable redeclaration
 
-// // const firstNumber = 10; //variable redeclaration
+// console.log(firstname); //output - Jhon
+// console.log(lastname); //output - undefined
 
-// // console.log(firstname); //output - Jhon
-// // console.log(lastname); //output - undefined
-
-// //  var - global scope / functional scope
-// // let and const - block scope
-
-// // var - hositing
-// // let and const - no hositing
-
-// // Rule for naming JS variable:
-
-// // 1. Variable names can only contain letters, numbers, $ and _.\
-// // 2. Variable names can not start with a number.
-// // 3. Variable names are case sensitive.
-// // 4. Variable names can not contain spaces.
-// // 5. Variable names should be descriptive.
-// // 6. Variable names can not contain reserved words.
+//--------------------------------------------//
 
 
-// // MultipleWords - camelCase,
-
-// // namingConvention
-// // camelCase; - JS
-// // PascalCase; - React
-// // snake_case; - Python
-// // kebab-case, dash-case; - CSS
+// Hoisting :- JavaScript hoisting is the process of moving all the declarations to the top of the current scope (block scope / functional scope).
 
 
+//---------->Rule for naming JS variable:<----------//
 
-// // firstname = "Punam"; //valid
+// 1. Variable names can only contain letters, numbers, $ and _.
+// 2. Variable names can not start with a number.
+// 3. Variable names are case sensitive.
+// 4. Variable names can not contain spaces.
+// 5. Variable names should be descriptive.
+// 6. Variable names can not contain reserved words.
 
-// // firstName;
-// // fullname;
-// // goingToShopping;
+// let name@name = "Punam"; //invalid
+// let 9name = "Punam"; //invalid
 
 
-// // let name@name = "Punam"; //invalid
+//---------->MultipleWords<----------// 
 
-// // let 9name = "Punam"; //invalid
+// 1.)camelCase:- JS -> let camelCaseVariable = "example";
+// 2.)PascalCase:- React -> let PascalCaseVariable = "example";
+// 3.)snake_case:- Python -> let snake_case_variable = "example";
+// 4.)kebab-case OR dash-case:- CSS -> let kebab-case-variable = "example";
 
-// // Varibale Types / Data Types
 
-// // 1. String - Text
-// // 2. Number - 1, 2, 3, 4, 5
-// // 3. Boolean - true / false
-// // 4. Object - {}
-// // 5. Array - []
-// // 6. Null - null
-// // 7. Undefined - undefined
 
-// //  String - Collection of characters
-// let name = "Punam";
-// let name2 = 'Sangeeta';
 
-// const sentence = "I'm going to the market";
-// const quotes = "He Said 'I am Learning JS'";
+//---------->Varibale Types OR Data Types<----------//
 
-// let num1 = 10;
-// const num2 = 20;
-// var num3 = 30;
+// A.)Primitive Data Types: Basic data types that represent single values and are immutable.
 
-// let result = false;
+// 1.)String - Text: Collection of characters -> let string = "Hello";
+// 2.)Number - 1, 2, 3, 4, 5 -> let number = 1;
+// 3.)Boolean - true/false -> let isTrue = true;
+// 4.)Null - variable is declared and assigned null/empty value -> let nullValue = null;
+// 5.)Undefined - undefined value that has been declared but has not been assigned a value -> let a;
 
-// let test = 10 > 5;
+// B.)Non-primitive Data Types: Can hold multiple values and are are mutable.
 
-// // console.log(test);
+// 1.)Array - Collection of data of same type or different type -> const array = [10,5,"Chandni","Sangeeta",true];
 
-// // Array - Collection of data of same type or different type
+// index based locations - index statrs from 0 to the length of arry -1.
+// console.log(array[2]);
 
-// const array = [10, 5, "Punam", "Sangeeta", true];
-
-// // console.log(array);
-// // index based locations - index statrs from 0
-
-// // console.log(array[5]);
-
-// // object - Collection of key value pairs
-
+// 2.)Object - Collection of key value pairs ->
 // let student = {
 //     name:"Punam",
 //     age: 25,
@@ -126,107 +120,29 @@
 //     phone: {
 //         mobile: 1234567890,
 //         landline: 1234567890
-//     } 
-// }
-
-// // console.log(student.phone.mobile);
-
-// // undefined - variable is declared but not assigned any value.
-
-// let box;
-
-// // console.log(box);
-
-// // null - variable is declared and assigned null value.
-
-// let box2 = null; // empty
-
-// // console.log(box2);
-
-// // Dynamically type language - JS
-
-// let test1 = "10.7";
-
-// // typeof - that returns its data type
-
-// // console.log(typeof test1);
-
-// // integer - 1, 2, 3
-// // float - decimal number ( 1.3 , 1.4556)
-
-// // Convert Number to String , String to Number
-
-// let num4 = String(3);
-// console.log(typeof num4);
-
-// let num5 = Number("5");
-// console.log(typeof num5);
-
-// Arithmatic Operators
-
-// + // Addition
-// - // Subtraction
-// * // Multiplication
-// / // Division
-// % // Modulus - returns reminder
-// ** // Exponentiation - power
-
-// let num6 = 10;
-// let num7 = 3;
+//     },
+// };
+// console.log(student.phone.mobile);
 
 
-// console.log(Math.pow(num6,2))
-
-// console.log(num6 ** 2);
-
-// Calulate the  total second of March month;
-
-// let days = 31;
-// let hours = 24;
-// let minutes = 60;
-// let seconds = 60;
-
-// let totalSeconds = days * hours * minutes * seconds;
-
-// console.log(totalSeconds)
-
-// Calculate total hours in a year.
-
-// Increment and Decrement Operators
-
-// Post Increment
-// ++ // Increment
-// -- // Decrement
-
-// let num8 = 10;
-
-// post increment - first return then increment
-// pre increment - first increment then return
-
-// console.log(num8--,"first");
-
-// console.log(num8,"second");
-
-// console.log(num8 -- ,"first"); // 10
-
-// console.log(num8,"second"); // 9
+// typeof - that returns its data type
+// let test1=7.8;
+// console.log(typeof test1);
 
 
-// BODMAS
+//---------->Conversion<----------//
 
-// console.log(9+9-5*5); 
+// 1.)Number to String:
 
-// console.log(10 + 8 + "8") = 18 + "8" = "188";
+// let num = 10;
+// let str = String(num); // Using String() constructor
+// let str2 = num.toString(); // Using toString() method
+// console.log(typeof str,typeof str2);
 
-// console.log(10 + 5 + "Hello" + 9 + 9);  // 10 + 5 = 15 + "Hello" = 15Hello + 9 = 15Hello9 + 9 = 15Hello99
-// left to right
+// 2.)String to Number:
 
-// let num10 = 10;
-// let num11 = 20;
-// let word = "ten";
-
-// console.log(num10 + num11 + word);
-
-// String + Number = String
-
-//  + concatenation operator
+// let str = "10";
+// let num = Number(str); // Using Number() constructor
+// let num2 = parseInt("10.5"); // Using parseInt()
+// let num3 = parseFloat("10.5"); // Using parseFloat()
+// console.log(typeof num,typeof num2, typeof num3);
